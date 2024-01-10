@@ -9,7 +9,7 @@ def get_img_as_base64(image_path):
     return base64_encoded
 
 background_image_path = "image/img.png"
-image_path = "image/img.png"
+image_path = "image/logo.png"
 im = Image.open(image_path)
 im2 = Image.open("image/logo.png")
 st.set_page_config(page_title="EstiWise", page_icon=im)
