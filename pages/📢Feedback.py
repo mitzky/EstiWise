@@ -30,7 +30,7 @@ page_bg_img = f"""
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-st.header("Get in touch with Us")
+st.header("𝐆𝐞𝐭 𝐢𝐧 𝐭𝐨𝐮𝐜𝐡 𝐰𝐢𝐭𝐡 𝐔𝐬")
 st.write("Please use the form below to send us a message:")
 contact_form = """
         <form action="https://formsubmit.com/mitzmaastig@gmail.com" 
