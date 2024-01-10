@@ -67,7 +67,7 @@ im = Image.open(image_path)
 
 background_image = Image.open(background_image_path)
 st.write("------------------------------------------------------------------")
-st.write("------------------------------------------------------------------")
+st.write("                                                                  ")
 st.write("------------------------------------------------------------------")
 area = st.number_input("Area (in square meters):", min_value=0.0)
 num_floors = st.number_input("Number of floors:", min_value=0)
