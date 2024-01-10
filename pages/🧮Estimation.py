@@ -62,9 +62,9 @@ def get_img_as_base64(image_path):
     return base64_encoded
 
 background_image_path = "image/img.png"
-image_path = "image/img.png"
+image_path = "image/logo.png"
 im = Image.open(image_path)
-
+im2 = Image.open("image/logo.png")
 background_image = Image.open(background_image_path)
 st.write("------------------------------------------------------------------")
 area = st.number_input("Area (in square meters):", min_value=0.0)
