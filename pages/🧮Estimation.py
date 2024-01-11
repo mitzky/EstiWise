@@ -39,9 +39,7 @@ st.write("------------------------------------------------------------------")
 area = st.number_input("Area (in square meters):", min_value=0.0)
 num_floors = st.number_input("Number of floors:", min_value=1)
 num_rooms = st.number_input("Number of rooms:", min_value=1, format="%d")
-num_bathrooms = st.number_input("Number of comfort rooms:", min_value=0, format="%d")
-professional_fees = st.number_input("Professional Fees:", value=0.0, step=1000.0)
-machinery_cost = st.number_input("Machinery Cost:", value=0.0, step=1000.0)
+num_comfortrooms = st.number_input("Number of comfort rooms:", min_value=0, format="%d")
 permit_cost = st.number_input("Building Permit Cost:", value=0.0, step=1000.0)
 
 cement = area * 10 #Kg
