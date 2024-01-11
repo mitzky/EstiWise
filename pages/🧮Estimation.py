@@ -8,37 +8,6 @@ from PIL import Image
 import base64
 
 
- 
-# App title
-st.title(" 𝐋𝐞𝐭'𝐬 𝐜𝐚𝐥𝐜𝐮𝐥𝐚𝐭𝐞! ")
-
-# Input for budget
-budget = st.number_input("Enter your budget:")
-
-# Cost category inputs
-site_preparation = st.number_input("Site Preparation:")
-material_costs = st.number_input("Material costs:")
-labor_costs = st.number_input("Labor costs:")
-subcontractor_costs = st.number_input("Subcontractor costs:")
-equipment_costs = st.number_input("Equipment costs:")
-permits_and_fees = st.number_input("Permits and fees:")
-client_selections = st.number_input("Client Selections:")
-indirect_expenses = st.number_input("Indirect expenses:")
-capital_costs = st.number_input("Capital costs:")
-profit_margin = st.number_input("Profit Margin:")
-contingencies = st.number_input("Contingencies:")
-
-# Display total cost
-total_cost = (site_preparation + material_costs + labor_costs + subcontractor_costs +
-              equipment_costs + permits_and_fees + client_selections + indirect_expenses +
-              capital_costs + profit_margin + contingencies)
-st.write(f"Total Cost: ${total_cost}")
-
-# Check if budget is enough
-if budget >= total_cost:
-    st.success(f"Your budget of ${budget} is enough to cover the estimated total cost of ${total_cost}.")
-else:
-    st.error(f"Your budget of ${budget} is not enough to cover the estimated total cost of ${total_cost}.")
 
 def calculate_construction_cost(area, num_floors, num_rooms, num_bathrooms, ):
     cost_per_sqm = 50000
