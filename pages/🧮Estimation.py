@@ -10,10 +10,10 @@ import base64
 
 
 def calculate_construction_cost(area, num_floors, num_rooms, num_comfortrooms, ):
-    cost_per_sqm = 14000
+    cost_per_sqm = 12000
 
     total_area = area * num_floors
-    total_cost = total_area * cost_per_sqm + num_rooms * 45000 + num_comfortrooms * 35000
+    total_cost = total_area * cost_per_sqm + num_rooms * 25000 + num_comfortrooms * 15000
 
     return total_cost
 def calculate_total_cost2(permit_cost):
@@ -40,7 +40,7 @@ area = st.number_input("Area (in square meters):", min_value=0.0)
 num_floors = st.number_input("Number of floors:", min_value=1)
 num_rooms = st.number_input("Number of rooms:", min_value=1, format="%d")
 num_comfortrooms = st.number_input("Number of comfort rooms:", min_value=0, format="%d")
-permit_cost = st.number_input("Building Permit Cost:", value=0.0, step=500.0)
+permit_cost = st.number_input("Building Permit Cost:", value=0.0, step=1000.0)
 
 cement = area * 10 #Kg
 steel = area * 4 #Kg
