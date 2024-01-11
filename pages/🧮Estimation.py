@@ -58,7 +58,7 @@ summary = {"Cement (kg)": cement,
 
     #Calculate construction cost based on inputs
 total_cost = calculate_construction_cost(area, num_floors, num_rooms, num_comfortrooms)
-total_cost2 = calculate_total_cost2( professional_fees, machinery_cost, permit_cost)
+total_cost2 = calculate_total_cost2(permit_cost)
 overall = total_expenses(total_cost2, total_cost)
     #Display construction cost
 st.header("Results:")
