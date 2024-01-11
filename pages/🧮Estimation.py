@@ -9,11 +9,11 @@ import base64
 
 
 
-def calculate_construction_cost(area, num_floors, num_rooms, num_bathrooms, ):
-    cost_per_sqm = 50000
+def calculate_construction_cost(area, num_floors, num_rooms, num_comfortrooms, ):
+    cost_per_sqm = 30000
 
     total_area = area * num_floors
-    total_cost = total_area * cost_per_sqm + num_rooms * 100000 + num_bathrooms * 75000
+    total_cost = total_area * cost_per_sqm + num_rooms * 850000 + num_comfortrooms * 55000
 
     return total_cost
 def calculate_total_cost2( professional_fees, machinery_cost, permit_cost):
@@ -39,7 +39,7 @@ st.write("------------------------------------------------------------------")
 area = st.number_input("Area (in square meters):", min_value=0.0)
 num_floors = st.number_input("Number of floors:", min_value=0)
 num_rooms = st.number_input("Number of rooms:", min_value=0, format="%d")
-num_bathrooms = st.number_input("Number of bathrooms:", min_value=0, format="%d")
+num_bathrooms = st.number_input("Number of comfort rooms:", min_value=0, format="%d")
 professional_fees = st.number_input("Professional Fees:", value=0.0, step=1000.0)
 machinery_cost = st.number_input("Machinery Cost:", value=0.0, step=1000.0)
 permit_cost = st.number_input("Building Permit Cost:", value=0.0, step=1000.0)
