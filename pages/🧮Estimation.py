@@ -10,10 +10,10 @@ import base64
 
 
 def calculate_construction_cost(area, num_floors, num_rooms, num_comfortrooms, ):
-    cost_per_sqm = 12000
+    cost_per_sqm = 7000
 
     total_area = area * num_floors
-    total_cost = total_area * cost_per_sqm + num_rooms * 25000 + num_comfortrooms * 15000
+    total_cost = total_area * cost_per_sqm + num_rooms * 15000 + num_comfortrooms * 10000
 
     return total_cost
 def calculate_total_cost2(permit_cost):
