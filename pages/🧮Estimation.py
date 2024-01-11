@@ -10,10 +10,10 @@ import base64
 
 
 def calculate_construction_cost(area, num_floors, num_rooms, num_comfortrooms, ):
-    cost_per_sqm = 30000
+    cost_per_sqm = 20000
 
     total_area = area * num_floors
-    total_cost = total_area * cost_per_sqm + num_rooms * 85000 + num_comfortrooms * 55000
+    total_cost = total_area * cost_per_sqm + num_rooms * 75000 + num_comfortrooms * 45000
 
     return total_cost
 def calculate_total_cost2(permit_cost):
@@ -40,7 +40,7 @@ area = st.number_input("Area (in square meters):", min_value=0.0)
 num_floors = st.number_input("Number of floors:", min_value=1)
 num_rooms = st.number_input("Number of rooms:", min_value=1, format="%d")
 num_comfortrooms = st.number_input("Number of comfort rooms:", min_value=0, format="%d")
-permit_cost = st.number_input("Building Permit Cost:", value=0.0, step=1000.0)
+permit_cost = st.number_input("Building Permit Cost:", value=0.0, step=500.0)
 
 cement = area * 10 #Kg
 steel = area * 4 #Kg
@@ -73,11 +73,11 @@ if st.button("Calculate"):
         #Total
         if total_cost == 0:
             st.write("Hmm, it looks like you haven't entered any parameters yet.")
-        elif total_cost < 1000000:
+        elif total_cost < 100000:
             st.write("Wow, that's a great deal! Your construction cost estimate is very affordable.")
-        elif total_cost < 2000000:
+        elif total_cost < 200000:
             st.write("Your construction cost estimate is reasonable and fits within the average budget for most people.")
-        elif total_cost < 5000000:
+        elif total_cost < 500000:
             st.write("Your construction cost estimate is a bit high, but still within the range of what many people spend.")
         else:
             st.write(
